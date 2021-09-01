@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noder Steak</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Nav bar + logo -->
 
@@ -26,17 +29,83 @@
 
         <!-- Hưng in charge -->
         <div class="main-course">
-    
+            <h1>Main Courses</h1>
+            <h2>Exquisite tastes for you and your family</h2>
+            <br>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="./images/amersteak.jpg" style="width:100%">
+                    <div class="text">American Beef Steak - 59 USD</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="./images/ribs.jpg" style="width:100%">
+                    <div class="text">Ribs From The Grill - 79 USD</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="./images/lambchops.jpg" style="width:100%">
+                    <div class="text">Premium Lamb Chops - 69 USD</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="./images/familyset.jpg" style="width:100%">
+                    <div class="text">Family Festival Set - 129 USD</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
         </div>
+        <br>
+        <hr class="main--dessert">
+
         <div class="dessert">
-    
+            <h1>Desserts</h1>
+            <h2>Cap off an amazing meal with our premium treats</h2>
+            <br>
+
+            <div class="dessert--container">
+                <div class="column">
+                    <img src="./images/chocolatecake.jpg" alt="Cake" style="width:100%">
+                    <div class="dessert--desc">Chocolate Cake - 19 USD</div>
+                </div>
+                <div class="column">
+                    <img src="./images/strawberry_yogurt.jpg" alt="Cake" style="width:100%">
+                    <div class="dessert--desc">Strawberry Yogurt - 29 USD</div>                    
+                </div>
+                <div class="column">
+                    <img src="./images/raspberry_icecream.jpg" alt="Cake" style="width:100%">
+                    <div class="dessert--desc">Raspberry Icecream - 39 USD</div>
+                </div>
+            </div>
         </div>
+        <br>
+        <hr class="main--dessert">
     </main>
-    
+
     <!-- Khải in charge -->
     <footer>
 
     </footer>
     <script src="./app.js"></script>
 </body>
+
 </html>
