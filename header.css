@@ -65,7 +65,7 @@ header{
 }
 span {
     /* letter-spacing: 20px; */
-    font-style: none;
+    /* font-style: none; */
     font-weight: 700;
     display: inline-block;
     color: transparent;
