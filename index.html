@@ -8,7 +8,8 @@
     <link rel="icon" href="./images/logo.png" type="image/x-icon">
     <title>Noder Steak</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./header.css">
+    <script src="./store.js" async></script>
+    <!-- <link rel="stylesheet" href="./header.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,15 +28,15 @@
         <a href="#" class="logo"><img src="./images/logo.png" alt="" class="logo-image"></a>
         <ul class="header_nav">
             <li class="header_nav-item"><a href="#" class="header_nav-link">Home</a></li>
-            <li class="header_nav-item"><a href="" class="header_nav-link">Content 1</a></li>
-            <li class="header_nav-item"><a href="" class="header_nav-link">Content 2</a></li>
-            <li class="header_nav-item"><a href="" class="header_nav-link">Content 3</a></li>
-            <li class="header_nav-item"><a href="" class="header_nav-link">Content 4</a></li>
+            <li class="header_nav-item"><a href="#main-course" class="header_nav-link">Main Courses</a></li>
+            <li class="header_nav-item"><a href="#desserts" class="header_nav-link">Desserts</a></li>
+            <!-- <li class="header_nav-item"><a href="" class="header_nav-link">Content 3</a></li>
+            <li class="header_nav-item"><a href="" class="header_nav-link">Content 4</a></li> -->
 
         </ul>
     </header>
     <div class="barner" id="barner">
-        <h1 class="barner-text">Welcome to <span>NoderSteak</span></h1>
+        <h1 class="barner-text">Welcome to <span class="restaurant-name">NoderSteak</span></h1>
         <p class="slogan">"everything here is the best"</p>
 
         <video autoplay loop muted>
@@ -53,37 +54,50 @@
 
         </div>
 
+        <hr class="main--dessert">
         <!-- Hưng in charge -->
-        <div class="main-course">
-            <h1>Main Courses</h1>
-            <h2>Exquisite tastes for you and your family</h2>
+        <div class="main-course" id="main-course">
+            <h1> <strong>Main Courses</strong> </h1>
+            <h2> <em>Exquisite tastes for you and your family</em> </h2>
             <br>
             <!-- Slideshow container -->
             <div class="slideshow-container">
 
                 <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
+                <div class="mySlides">
                     <div class="numbertext">1 / 4</div>
                     <img src="./images/amersteak.jpg" style="width:100%">
-                    <div class="text">American Beef Steak - 59 USD</div>
+                    <div class="text"> <span class="shop-item-title">American Beef Steak</span> - <span
+                            class="shop-item-price">$59</span>
+                        <button class="btn btn-primary shop-item-button" type="button">🛒</button>
+                    </div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="mySlides">
                     <div class="numbertext">2 / 4</div>
                     <img src="./images/ribs.jpg" style="width:100%">
-                    <div class="text">Ribs From The Grill - 79 USD</div>
+                    <div class="text"> <span class="shop-item-title">Ribs From The Grill</span> - <span
+                            class="shop-item-price">$79</span>
+                        <button class="btn btn-primary shop-item-button" type="button">🛒</button>
+                    </div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="mySlides">
                     <div class="numbertext">3 / 4</div>
                     <img src="./images/lambchops.jpg" style="width:100%">
-                    <div class="text">Premium Lamb Chops - 69 USD</div>
+                    <div class="text"> <span class="shop-item-title">Premium Lamb Chops</span> - <span
+                            class="shop-item-price">$69</span>
+                        <button class="btn btn-primary shop-item-button" type="button">🛒</button>
+                    </div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="mySlides">
                     <div class="numbertext">4 / 4</div>
                     <img src="./images/familyset.jpg" style="width:100%">
-                    <div class="text">Family Festival Set - 129 USD</div>
+                    <div class="text"> <span class="shop-item-title">Family Festival Set</span> - <span
+                            class="shop-item-price">$129</span>
+                        <button class="btn btn-primary shop-item-button" type="button">🛒</button>
+                    </div>
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -100,32 +114,60 @@
                 <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
+        <script src="./slideshow.js"></script>
         <br>
         <hr class="main--dessert">
 
-        <div class="dessert">
-            <h1>Desserts</h1>
-            <h2>Cap off an amazing meal with our premium treats</h2>
+        <div class="dessert" id="desserts">
+            <h1> <strong>Desserts</strong> </h1>
+            <h2> <em>Cap off an amazing meal with our premium treats</em> </h2>
             <br>
 
             <div class="dessert--container">
                 <div class="column">
                     <img src="./images/chocolatecake.jpg" alt="Cake" style="width:100%">
-                    <div class="dessert--desc">Chocolate Cake - 19 USD</div>
+                    <div class="dessert--desc"> <span class="shop-item-title">Chocolate Cake</span> - <span
+                            class="shop-item-price">$19</span>
+                        <button class="btn btn-primary shop-item-button" type="button">🛒</button>
+                    </div>
                 </div>
                 <div class="column">
                     <img src="./images/strawberry_yogurt.jpg" alt="Cake" style="width:100%">
-                    <div class="dessert--desc">Strawberry Yogurt - 29 USD</div>
+                    <div class="dessert--desc"> <span class="shop-item-title">Strawberry Yogurt</span> - <span
+                            class="shop-item-price">$29</span>
+                        <button class="btn btn-primary shop-item-button" type="button">🛒</button>
+                    </div>
                 </div>
                 <div class="column">
                     <img src="./images/raspberry_icecream.jpg" alt="Cake" style="width:100%">
-                    <div class="dessert--desc">Raspberry Icecream - 39 USD</div>
+                    <div class="dessert--desc"> <span class="shop-item-title">Raspberry Icecream</span> - <span
+                            class="shop-item-price">$39</span>
+                        <button class="btn btn-primary shop-item-button" type="button">🛒</button>
+                    </div>
                 </div>
             </div>
         </div>
         <br>
         <hr class="main--dessert">
     </main>
+
+    <div class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </div>
+
+    <hr class="main--dessert">
 
     <!-- Khải in charge -->
     <footer>
@@ -178,7 +220,6 @@
         </script>
 
     </footer>
-    <script src="./app.js"></script>
 </body>
 
 </html>
